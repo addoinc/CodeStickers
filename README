@@ -3,4 +3,4 @@
 *) http://github.com/azri/CodeStickers/blob/master/app/metal/sticker.rb is metal app that allows:
   -) Creation of a new code_sticker ( /sticker && /sticker/create )
   -) Viewing of a each code_sticker ( /sticker/$sticker_id )
-  -) Generating a .js feed for the code_sticker that can be used to render it on any webpage.
+  -) Generating a .js feed for the code_sticker that can be used to render it on any webpage ( /sticker/$sticker_id.js ).
