@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^images/(.*) /public/images/$1 [L]
+RewriteRule ^logos/(.*) /public/logos/$1 [L]
+RewriteRule ^stylesheets/(.*) /public/stylesheets/$1 [L]
+RewriteRule ^javascripts/(.*) /public/javascripts/$1 [L]
+
+RewriteCond %{REQUEST_URI} !^/public/logos
+RewriteCond %{REQUEST_URI} !^/public/images
+RewriteCond %{REQUEST_URI} !^/public/stylesheets
+RewriteCond %{REQUEST_URI} !^/public/javascripts
+
+RewriteRule ^(.*) http://127.0.0.1:3000/$1 [P]
